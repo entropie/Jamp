@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE JampStyle SYSTEM "style.dtd">
+
+<JampStyle>
+
+<special name="ShoutBox">
+	<tag name="form">action="handle.php?addsbentry=1&amp;backid=:backid:" method="POST"</tag>
+		<tag name="table">border="0" width="680" cellspacing="0" cellpadding="0" id="shoutbox" summary=""</tag>
+			<tag name="tr" />
+				<tag name="td" opt="closed" content=":STR_shoutbox:">bgcolor="#006400" class="title"</tag>
+			<tag name="/tr" />
+			<special name="loop">
+				<tag name="tr" />
+					<tag name="td">class="sb_entry" bgcolor=":bgColor:" title=":sbTitle:"</tag>
+						<tag name="span" opt="closed" content=":sbName:">class="sb_name"</tag>
+						<tag name="span" opt="closed" content=":sbEntry:">class="sb_text"</tag>
+					<tag name="/td" />
+				<tag name="/tr" />
+			</special>
+			<special name="/loop" />
+			<tag name="tr">bgcolor=":bgColor:"</tag>
+				<tag name="td">class="sb_form" style="padding:10px"</tag>
+					<special name="" opt="" content=":shoutboxform:" />
+					<tag name="input">type="submit" value=":STR_sbsubmit:" class="sb_submit"</tag>
+				<tag name="/td" />
+			<tag name="/tr" />
+		<tag name="/table" />
+	<tag name="/form" />
+</special>
+<special name="/ShoutBox" />
+
+<special name="ShoutBoxFull">
+	<tag name="table">border="0" width="680" cellspacing="5" cellpadding="0" id="shoutbox" summary=""</tag>
+		<tag name="tr" />
+			<tag name="td" opt="closed" content=":sbname:">class="sb_aloneTitle" width="100%"</tag>
+			<tag name="td" opt="closed"  content=":sbdate:">class="sb_aloneDate" nowrap</tag>
+			<tag name="/td" />
+		<tag name="/tr" />
+		<tag name="tr" />
+			<tag name="td" opt="closed" content=":sbtext:">colspan="2" lass="sb_aloneText"</tag>
+		<tag name="/tr" />
+	<tag name="/table" />
+</special>
+<special name="/ShoutBoxFull" />
+
+</JampStyle>

@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE JampStyle SYSTEM "style.dtd">
+<JampStyle>
+
+<special name="header">
+	<special name="" opt="" content=":doctype:" />
+<tag name="html" />
+<tag name="head" />
+<tag name="title" opt="closed" content=":pageTitle:"></tag>
+<tag name="meta">http-equiv="content-type" content="text/html; charset=ISO-8859-1"</tag>
+<tag name="meta">http-equiv="cache-control" content="no-cache"</tag>
+<tag name="meta">name="revision" content=":version:"</tag>
+<tag name="meta">name="keywords" content="mp3, music stream, stream, Jamp"</tag>
+<tag name="link">rel="stylesheet" type="text/css" href=":styleSheet:"</tag>
+<tag name="link">rev="made" href="mailto:entropie@ackro.de"</tag>
+<tag name="script" opt="closed">src="inc/inc.functions.js" type="text/javascript" language="javascript"</tag>
+<tag name="/head" />
+<tag name="body">onLoad="sf()"</tag>
+	<tag name="div" opt="closed" content="&nbsp;">id="rtophack"</tag>
+	<tag name="div" opt="closed" content="&nbsp;">id="topline"</tag>
+	<tag name="div" opt="closed" content="&nbsp;">id="version"</tag>
+	<tag name="div" opt="closed" content="&nbsp;">id="ltop"</tag>
+	<tag name="div" opt="closed" content="&nbsp;">id="banner"</tag>
+	<tag name="div" opt="closed" content="&nbsp;">id="ltophack"</tag>
+	<tag name="div" opt="closed" content="&nbsp;">id="ltophack1"</tag>
+	<tag name="div">id="content"</tag>
+</special>
+<special name="/header" />
+
+
+<special name="playlist_list">
+	<special name="loop">
+		<special name="" opt="" content=":playlistlink:" />
+	</special>
+	<special name="/loop" />
+</special>
+<special name="/playlist_list" />
+
+<special name="search">
+	<tag name="form">action="handle.php?backid=:backid:" method="POST"</tag>
+		<tag name="table">border="0" cellspacing="0" cellpadding="0" width="680" summary=""</tag>
+			<special name="" opt="" content=":searchresult:" />
+		<tag name="/table" />
+	<tag name="/form" />
+</special>
+<special name="/search" />
+
+<special name="searchTop">
+			<tag name="tr">onmouseover="setPointer(this, :inc:, 'over', ':bgColor:', ':pointerColor:', ':markerColor:');" onmouseout="setPointer(this, :inc:, 'out', ':bgColor:', ':pointerColor:', ':markerColor:');" onmousedown="setPointer(this, :inc:, 'click', ':bgColor:', ':pointerColor:', ':markerColor:');"</tag>
+				<tag name="td" opt="closed" content=":fileRowPlay:">bgcolor=":bgColor:" class="rowPlay"</tag>
+				<tag name="td" opt="closed" content=":fileRowDir:">colspan="2" bgcolor=":bgColor:" class="rowDirTop"</tag>
+				<tag name="td" opt="closed" content=":fileRowStat:">colspan="2" bgcolor=":bgColor:" class="rowStatTop" nowrap</tag>
+				<tag name="td" opt="closed" content=":fileRowSubmit:">bgcolor=":bgColor:" class="rowSubmit"</tag>
+			<tag name="/tr" />
+</special>
+<special name="/searchTop" />
+
+<special name="searchFiles">
+			<tag name="tr">onmouseover="setPointer(this, :inc:, 'over', ':bgColor:', ':pointerColor:', ':markerColor:');" onmouseout="setPointer(this, :inc:, 'out', ':bgColor:', ':pointerColor:', ':markerColor:');" onmousedown="setPointer(this, :inc:, 'click', ':bgColor:', ':pointerColor:', ':markerColor:');"</tag>
+				<tag name="td" opt="closed" content=":rowFile:">bgcolor=":bgColor:" class="rowFile" colspan="4"</tag>
+				<tag name="td" opt="closed" content=":rowFileCheckb:">align="right" bgcolor=":bgColor:" class="rowFileCheckb"</tag>
+				<tag name="td" opt="closed" content=":rowFileSubmit:">bgcolor=":bgColor:" class="rowFileSubmit"</tag>
+			<tag name="/tr" />
+</special>
+<special name="/searchFiles" />
+
+<special name="playlist">
+	<tag name="form">action="playlist.php?playlist=:playlistname:" method="POST" name="mainForm"</tag>
+		<tag name="table">border="0" cellspacing="0" cellpadding="0" width="680" summary=""</tag>
+			<tag name="tr" />
+				<tag name="td">colspan="6" class="playlistheader" bgcolor=":mBgColor:"</tag>
+					<tag name="span" opt="" content=":STR_mpldelone:">class="e"</tag>
+						<tag name="input">type="radio" name="del" value="delone"</tag>
+					<tag name="/span" />
+					<tag name="span" opt="" content=":STR_mpldelall:">class="e"</tag>
+						<tag name="input">type="radio" name="del" value="delall"</tag>
+					<tag name="/span" />
+					<tag name="span" opt="" content=":STR_mplnothing:">class="e"</tag>
+						<tag name="input">type="radio" name="del" value="nothing"</tag>
+					<tag name="/span" />
+					<tag name="span" opt="" content=":STR_mplmp3blaster:">class="e"</tag>
+						<tag name="input">type="radio" name="del" value="mp3blaster"</tag>
+					<tag name="/span" />
+					<tag name="span" opt="" content=":STR_mplplay:">class="e"</tag>
+						<tag name="input">type="radio" name="del" value="play"</tag>
+					<tag name="/span" />
+				<tag name="/td" />
+			<tag name="/tr" />
+			<tag name="tr">onmouseover="setPointer(this, :inc:, 'over', ':bgColor:', ':pointerColor:', ':markerColor:');" onmouseout="setPointer(this, :inc:, 'out', ':bgColor:', ':pointerColor:', ':markerColor:');" onmousedown="setPointer(this, :inc:, 'click', ':bgColor:', ':pointerColor:', ':markerColor:');"</tag>
+				<tag name="td" opt="closed" content=":fileRowPlay:">bgcolor=":bgColor:" class="rowPlay"</tag>
+				<tag name="td" opt="closed" content=":fileRowDir:">bgcolor=":bgColor:" class="rowDirTop" colspan="2"</tag>
+				<tag name="td" opt="closed" content=":fileRowStat:">bgcolor=":bgColor:" class="rowStatTop" width="100%" nowrap</tag>
+				<tag name="td" opt="closed" content="&nbsp;">bgcolor=":bgColor:"</tag>
+				<tag name="td" opt="closed" content=":fileRowSubmit:">bgcolor=":bgColor:" class="rowSubmit"</tag>
+			<tag name="/tr" />
+			<special name="loop">
+				<tag name="tr">onmouseover="setPointer(this, :inc:, 'over', ':bgColor:', ':pointerColor:', ':markerColor:');" onmouseout="setPointer(this, :inc:, 'out', ':bgColor:', ':pointerColor:', ':markerColor:');" onmousedown="setPointer(this, :inc:, 'click', ':bgColor:', ':pointerColor:', ':markerColor:');"</tag>
+					<tag name="td" opt="closed" content=":rowFile:">bgcolor=":bgColor:" class="rowFile" colspan="4"</tag>
+					<tag name="td" opt="closed" content=":rowFileCheckb:">bgcolor=":bgColor:" class="rowFileCheckb"</tag>
+					<tag name="td" opt="closed" content=":rowFileSubmit:">bgcolor=":bgColor:" class="rowFileSubmit"</tag>
+				<tag name="/tr" />
+			</special>
+			<special name="/loop" />
+		<tag name="/table" />
+	<tag name="input">type="hidden" name="playlist" value=":playlistname:"</tag>
+	<tag name="/form" />
+</special>
+<special name="/playlist" />
+
+<special name="SongListDb">
+	<tag name="form">action="handle.php?backid=:backid:" method="POST" name="mainForm"</tag>
+		<tag name="table">border="0" cellspacing="0" cellpadding="0" width="680" summary=""</tag>
+			<tag name="tr">onmouseover="setPointer(this, :inc:, 'over', ':bgColor:', ':pointerColor:', ':markerColor:');" onmouseout="setPointer(this, :inc:, 'out', ':bgColor:', ':pointerColor:', ':markerColor:');" onmousedown="setPointer(this, :inc:, 'click', ':bgColor:', ':pointerColor:', ':markerColor:');"</tag>
+				<tag name="td" opt="closed" content=":fileRowPlay:">bgcolor=":bgColor:" class="rowPlay"</tag>
+				<tag name="td" opt="closed" content=":fileRowEnqueue:">bgcolor=":bgColor:" class="rowEnqueue"</tag>
+				<tag name="td" opt="closed" content=":fileRowDir:">bgcolor=":bgColor:" class="rowDirTop"</tag>
+				<tag name="td" opt="closed" content=":fileRowStat:">bgcolor=":bgColor:" class="rowStatTop" nowrap</tag>
+				<tag name="td" opt="closed" content=":fileRowCheck:">bgcolor=":bgColor:" class="rowCheck"</tag>
+				<tag name="td" opt="closed" content=":fileRowSubmit:">bgcolor=":bgColor:" class="rowSubmit"</tag>
+			<tag name="/tr" />
+			<special name="loop">
+				<tag name="tr">onmouseover="setPointer(this, :inc:, 'over', ':bgColor:', ':pointerColor:', ':markerColor:');" onmouseout="setPointer(this, :inc:, 'out', ':bgColor:', ':pointerColor:', ':markerColor:');" onmousedown="setPointer(this, :inc:, 'click', ':bgColor:', ':pointerColor:', ':markerColor:');"</tag>
+					<tag name="td" opt="closed" content=":fileRowPlay:">bgcolor=":bgColor:" class="rowPlay"</tag>
+					<tag name="td" opt="closed" content=":fileRowEnqueue:">bgcolor=":bgColor:" class="rowEnqueue"</tag>
+					<tag name="td" opt="closed" content=":fileRowDir:">bgcolor=":bgColor:" class="rowDir"</tag>
+					<tag name="td" opt="closed" content=":fileRowStat:">bgcolor=":bgColor:" class="rowStat" nowrap</tag>
+					<tag name="td" opt="closed" content=":fileRowCheck:">bgcolor=":bgColor:" class="rowCheck"</tag>
+					<tag name="td" opt="closed" content=":fileRowSubmit:">bgcolor=":bgColor:" class="rowSubmit"</tag>
+			<tag name="/tr" />
+			</special>
+			<special name="/loop" />
+		<tag name="/table" />
+	<tag name="/form" />
+</special>
+<special name="/SongListDb" />
+
+<special name="SongList">
+	<special name="loop">
+		<tag name="tr">onmouseover="setPointer(this, :inc:, 'over', ':bgColor:', ':pointerColor:', ':markerColor:');" onmouseout="setPointer(this, :inc:, 'out', ':bgColor:', ':pointerColor:', ':markerColor:');" onmousedown="setPointer(this, :inc:, 'click', ':bgColor:', ':pointerColor:', ':markerColor:');"</tag>
+			<tag name="td" opt="closed" content=":rowFile:">bgcolor=":bgColor:" class="rowFile" colspan="4"</tag>
+			<tag name="td" opt="closed" content=":rowFileCheckb:">bgcolor=":bgColor:" class="rowFileCheckb"</tag>
+			<tag name="td" opt="closed" content=":rowFileSubmit:">bgcolor=":bgColor:" class="rowFileSubmit"</tag>
+		<tag name="/tr" />
+	</special>
+	<special name="/loop" />
+</special>
+<special name="/SongList" />
+
+<special name="prolling">
+	<tag name="table">border="0" cellspacing="0" cellpadding="0" width="680" summary=""</tag>
+		<tag name="tr" />
+			<tag name="td" opt="closed" content=":proll:">id="prolling"</tag>
+		<tag name="/tr" />
+	<tag name="/table" />
+</special>
+<special name="/prolling" />
+
+<special name="ShoutBox">
+	<tag name="form">action="handle.php?addsbentry=1&amp;backid=:backid:" method="POST"</tag>
+		<tag name="table">border="0" width="680" cellspacing="0" cellpadding="0" id="shoutbox" summary=""</tag>
+			<tag name="tr" />
+				<tag name="td" opt="closed" content=":STR_shoutbox:">bgcolor="#006400" class="title"</tag>
+			<tag name="/tr" />
+			<special name="loop">
+				<tag name="tr" />
+					<tag name="td">class="sb_entry" bgcolor=":bgColor:" title=":sbTitle:"</tag>
+						<tag name="span" opt="closed" content=":sbName:">class="sb_name"</tag>
+						<tag name="span" opt="closed" content=":sbEntry:">class="sb_text"</tag>
+					<tag name="/td" />
+				<tag name="/tr" />
+			</special>
+			<special name="/loop" />
+			<tag name="tr">bgcolor=":bgColor:"</tag>
+				<tag name="td">class="sb_form" style="padding:10px"</tag>
+					<special name="" opt="" content=":shoutboxform:" />
+					<tag name="input">type="submit" value=":STR_sbsubmit:" class="sb_submit"</tag>
+				<tag name="/td" />
+			<tag name="/tr" />
+		<tag name="/table" />
+	<tag name="/form" />
+</special>
+<special name="/ShoutBox" />
+
+<special name="PlayListIn">
+	<tag name="table">border="0" cellspacing="0" cellpadding="3" id="playlistInHead"</tag>
+		<tag name="form">action="handle.php?backid=:backid:" name="playedit" method="POST"</tag>
+			<tag name="tr" />
+				<tag name="td">colspan="2" id="userPlaylist"</tag>
+					<special name="" opt="" content="UserPlaylist" />
+				<tag name="/td" />
+			<tag name="/tr" />
+			<tag name="tr" />
+				<tag name="td">colspan="2"</tag>
+					<special name="" opt="" content=":playlist_in:" />
+				<tag name="/td" />
+			<tag name="/tr" />
+			<tag name="tr" />
+				<tag name="td">colspan="2"</tag>
+					<tag name="select">name="pl_action" size="1" class="todo" style="width:200px"</tag>
+						<!--<tag name="option" opt="closed" content=":STR_plaction:" />-->
+						<tag name="option" opt="closed" content=":STR_plplayall:">value="play_all"</tag>
+						<tag name="option" opt="closed" content=":STR_plrmsel:">value="rem_sel"</tag>
+						<tag name="option" opt="closed" content=":STR_plsave:">value="save_all"</tag>
+						<tag name="option" opt="closed" content=":STR_plnew:">value="new_playlist"</tag>
+					<tag name="/select" />
+				<tag name="/td" />
+			<tag name="/tr" />
+			<tag name="tr" />
+				<tag name="td">align="center" colspan="2"</tag>
+					<tag name="input">type="text" name="save_plname" class="todo" style="width:150px"</tag>
+				<tag name="/td" />
+			<tag name="/tr" />
+			<tag name="tr" />
+				<tag name="td">align="center" class="gold" colspan="2"</tag>
+					<special name="" opt="" content=":plin_sel_desel:" />
+				<tag name="/td" />
+			<tag name="/tr" />
+			<tag name="tr" />
+				<tag name="td">align="center" colspan="2"</tag>
+					<tag name="input">type="submit" class="submit" value=":STR_plformlabel:"</tag>
+				<tag name="/td" />
+			<tag name="/tr" />
+		<tag name="/form" />
+	<tag name="/table" />
+</special>
+<special name="/PlayListIn" />
+
+<special name="footer">
+	<special name="" opt="" content=":INIT_shoutbox:" />
+	<special name="" opt="" content=":INIT_prolling:" />
+	<special name="" opt="" content=":botline:" />
+	<special name="" opt="" content=":validator:" />
+	<tag name="/div" />
+	<tag name="div">id="menu"</tag>
+		<tag name="div" opt="closed" content=":user:">id="username"</tag>
+			<tag name="div" opt="closed" content=":hplink::playlist::randlink::checkalldirs::checkallfiles::helplink::adminlink:">id="menulinks"</tag>
+			<special name="" opt="" content=":playlist_in:" />
+	<tag name="/div" />
+
+	<tag name="div">id="textfield"</tag>
+		<tag name="form">action="form.php?backid=:pathid:&amp;pathid=:backid:" method="POST" name="searchpl"</tag>
+			<tag name="table">border="0" cellspacing="0" cellpadding="0" width="950" summary=""</tag>
+				<tag name="tr" />
+					<tag name="td" opt="closed" content=":maintabletitle:">class="title"</tag>
+					<tag name="td" opt="closed" content=":homelink:">id="homelink"</tag>
+					<tag name="td">align="right" width="1"</tag>
+						<tag name="input">type="text" name="text" class="textarea"</tag>
+						<special name="" opt="" content=":collectarray:" />
+					<tag name="/td" />
+					<tag name="td">width="1"</tag>
+						<tag name="input">type="submit" value="--&gt;" class="submit"</tag>
+					<tag name="/td" />
+					<tag name="td">width="270"</tag>
+						<tag name="input">type="text" name="secText" class="secText"</tag>
+						<special name="" opt="" content=":adminLogin:" />
+					<tag name="/td" />
+				<tag name="/tr" />
+			<tag name="/table" />
+		<tag name="/form" />
+	<tag name="/div" />
+<tag name="/body" />
+<tag name="/html" />
+</special>
+<special name="/footer" />
+
+</JampStyle>

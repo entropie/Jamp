@@ -1,0 +1,155 @@
+/* $Id: screen.css,v 1.11 2004/02/24 21:18:40 entropie Exp $ */
+
+body { font-family:Verdana,Geneva,Arial,Helvetica,sans-serif; padding:0px; margin:0px; font-size:14px; background-image:url(../../templates/GreenWar/img/bg.gif); background-repeat:repeat-y; background-color:#556B2F; margin-bottom:100px; }
+table { font-family:Verdana,Geneva,Arial,Helvetica,sans-serif; font-size:14px; }
+img { border:0; }
+dfn { font-size:10px; font-style:normal; color:#004500; }
+
+#ltophack { position:absolute; top:80px; left:0px; width:20px; background-color:#556B2F; height:30px }
+#ltop { position:absolute; top:80px; left:0px; background-color:#006400; height:30px; font-weight:bold; color:Silver; width:100% }
+#banner { position:absolute; top:0px; left:0px; height:50px; width:500px; background-image:url(../../templates/GreenWar/img/banner.gif); z-index:99999999; }
+#rtophack { position:absolute; top:0px; left:725px; width: 25px; background-color:#556B2F; height: 50px; text-align:right; }
+#topline { position:absolute; top:50px; left:0px; background-color:#006400; width:750px }
+#ltophack1 { position:absolute; top:67px; left:0px; background-color:#556B2F; width:100px; height:13px; line-height:1px; }
+#version { position:absolute; top:49px; left:55px;  font-size: 14px; color:#98731D; }
+  #version .ver { font-weight:bold; }
+  #version #stats { font-size:10px; z-index: 1; color: #A5A5A4;}
+  #version .style { font-size:10px; color:#607D2F }
+  #version .admin { color:#24352B; }
+#textfield { position:absolute; top:83px; left:50px; width:915px; background-color:transparent; font-size:10px; z-index:1; height:20px; }
+  #textfield form	{ margin:0px;}
+  #textfield .title	{ height:25px; font-size:10px; color:#607D2F; font-size:14px; font-weight:bold; }
+  #textfield .textarea { font-size:14px; height:16px; background-color: #006400; border: 1px solid Black; width: 150px; color: gold; padding:0px; color:Silver; margin:0px; }
+  #textfield .secText	{ font-size:14px; height:16px; background-color: #005F00; border: 1px dotted #556B2F; width: 100px; color: gold; padding:0px; color:Silver; margin:0px;  margin-left:20px; }
+  #textfield .submit { font-size:12px; height:18px; width:20px; border:1px solid black; background-color:#556B2F; color:#000; padding:0px; margin-left:5px; width:25px; }
+#topnav	{ position:absolute; top:86px; left:180px; background-color: transparent; color: gold; font-size: 14px; z-index:1}
+#content { position:absolute; top:110px; left:50px; width: 680px; z-index:999}
+  #content p { padding: 5px; font-size:16px; }
+  #content h3, #content h2, #content h4	{ padding: 5px; }
+  #content h1 { font-size:22px; margin:5px; }
+  #content table { border:none; margin:0px; width:680px; }
+  #content form	 { margin:0px; }
+  #content .withoutTable { margin:50px; text-align:center; }
+  .searchMatchFile { color:#771717; font-weight:bold; }
+  .searchMatchDir { color:#771717 }
+.log { padding-left:8px; padding-top:2px; padding-bottom:3px; font-family:Arial; font-size:15px;}
+.log pre { margin:0px; padding:0px; }
+.logtitle { height:25px; font-size:10px; color: #607D2F; font-size:14px; font-weight:bold; }
+#menu { position:absolute; top:110px; left:750px; color:#002900; }
+  #menu #header { font-size: 14px;  color: Silver; font-weight:bold; margin-bottom:10px; }
+  #menu #playlistInHead { margin-top:5px; border: 3px solid #51652C; }
+  #menu #playedit { width:200px;  border: 1px solid #000; background-color:#556B2F; color:#000; }
+  #menu .todo { border: 1px solid #000; background-color:#556B2F; color: #FFE446; }
+  #menu #username { background-color:#51652C; width:201px; padding:3px; padding-left:10px; font-weight:bold; color:#000; }
+  #menu #menulinks { width:203px; padding-left:5px; border: 3px solid #51652C; }
+  #userPlaylist { background-color:#51652C; width:201px; padding:3px; font-weight:bold; color:#000;}
+#shoutbox { font-size:12px;}
+  #shoutbox .title { height:25px; font-size:10px; color: #607D2F; font-size:14px; font-weight:bold; }
+  #shoutbox .sb_entry { padding:5px; }
+  #shoutbox .sb_name { color:#000; font-weight:bold }
+  #shoutbox .sb_form { text-align:center }
+  #shoutbox .sb_field { border: 1px solid #000; width:282px; background-color:#556B2F; color: Silver; height:16px; color:#000; background-repeat:no-repeat }
+  /* if only the text field is visible */
+  #shoutbox .sb_field1 { width:568px; border: 1px solid #000; background-color:#556B2F; color: Silver; height:16px; color:#000; background-repeat:no-repeat }
+  #shoutbox .sb_submit { width:80px; border: 1px solid #000; background-color:#556B2F; color: Silver; height:20px; color:#000;}
+
+	.sb_aloneTitle { background-color:#51652C; font-size:16px; font-weight:bold; }
+	.sb_aloneDate  { background-color:#51652C; font-size:16px; text-align:right}
+	.sb_aloneText  { background-color:#556B2F; padding:10px; }
+
+.playlistheader { text-align:center; padding:4px;}
+.playlistheader .e { border:1px dashed black; margin-right:10px; padding:2px; }
+#homelink   { padding-right:0px; padding-top:1px; text-align:right; vertical-align:top; }
+#prolling   { background-color:#006400; height:35px; text-align:center; font-size:10px; padding:3px; }
+
+#botline { width:680px; color:#445525; margin-top:30px; background-color:transparent; text-align:center; font-family:Courier New }
+
+
+/* FILE BROWSING */
+.rowDir					{ color: #000; font-size: 14px; padding:5px; width:100%}
+.rowDirPl				{ color: #000; font-size: 14px; padding:5px; width:100% padding-right:0px; }
+.rowDirTop			{ color: #CCCCCC; font-size: 14px; padding:5px; width:100%}
+.rowEnqueue			{ font-size:10px; padding-left:5px; padding-right:3px; }
+.rowStat				{ font-size:10px; color:#24352B; padding-right:10px; text-align:right}
+.rowStatTop			{ font-size:10px; color:#002710; padding-right:10px; text-align:right; font-weight:bold; }
+.rowStat .num, .rowStatTop .num { font-weight:bold }
+.rowPlay				{ font-size:10px; padding-left:5px;}
+.rowCheck				{ font-size:10px; padding-bottom:2px;}
+.rowSubmit			{ padding-left:7px; padding-right:3px;}
+
+.rowFile			{ width:100%; margin:0px; padding: 3px; padding-left: 28px; font-size: 15px; color:#000}
+.rowFileCheckb		{ font-size:10px; color: Gold; padding-bottom:2px;}
+.rowFileSubmit		{ padding-left:7px; padding-right:3px;}
+
+/* HYPERLINKS */
+a:link						{ color: #FFE446; text-decoration:none; }
+a:visited					{ color: #FFE446; text-decoration:none; }
+a:hover						{ text-decoration: none; color:silver}
+a:active					{ color: Silver;; text-decoration:none;}
+a:focus						{ text-decoration:underline; }
+a.dark:link					{ color: #000; text-decoration:none; }
+a.dark:visited				{ color: #000; text-decoration:none;}
+a.dark:hover				{ text-decoration: underline; color:#000; }
+a.dark:active				{ color: Silver;; text-decoration:none;}
+a.dark:focus				{ text-decoration:underline; }
+
+.rowFile a:link				{ color: Black; text-decoration:none; }
+.rowFile a:visited			{ color: Black; text-decoration:none;}
+.rowFile a:hover			{ color: Black; text-decoration:none;  }
+.rowFile a:active			{ color: white; text-decoration:none; font-weight:bold; }
+
+.rowDir a:link				{ color: Black; text-decoration:none; font-weight:bold; }
+.rowDir a:visited			{ color: Black; text-decoration:none; font-weight:bold; }
+.rowDir a:hover				{ color: Black; text-decoration:none; font-weight:bold; }
+.rowDir a:active			{ color: white; text-decoration:none; font-weight:bold; }
+
+.rowDirTop a:link			{ color: #002710; text-decoration:none; font-weight:bold; }
+.rowDirTop a:visited		{ color: #002710; text-decoration:none; font-weight:bold; }
+.rowDirTop a:hover			{ color: #002710; text-decoration:underline; font-weight:bold; }
+.rowDirTop a:active			{ color: white; text-decoration:none; font-weight:bold; }
+
+a.darkb:link				{ color: #000; text-decoration:none; font-weight:bold; }
+a.darkb:visited				{ color: #000; text-decoration:none; font-weight:bold; }
+a.darkb:hover				{ text-decoration: underline; color:#000; font-weight:bold;  }
+a.darkb:active				{ color: Silver;; text-decoration:none; font-weight:bold; }
+a.darkb:focus				{ text-decoration:underline; font-weight:bold;  }
+
+a.file:link					{ color: Gold; text-decoration:none; }
+a.file:visited				{ color: Gold; text-decoration:none;}
+a.file:hover				{ text-decoration: underline; color:#FFF;}
+a.file:active				{ color: Silver; text-decoration:none;}
+a.file:focus				{ text-decoration:underline; }
+
+a.silver:link				{ color: Silver; text-decoration:none; }
+a.silver:visited			{ color: Silver; text-decoration:none;}
+a.silver:hover				{ text-decoration: underline; color:#000; }
+a.silver:active				{ color: Silver;; text-decoration:none;}
+a.silver:focus				{ text-decoration:underline; }
+
+a.menu:link					{ color: #002900; text-decoration:none;}
+a.menu:visited				{ color: #002900; text-decoration:none;}
+a.menu:hover				{ text-decoration: none; background-color:#006400; color:#000; font-weight:bold;}
+a.menu:active				{ color: Silver;; text-decoration:none;}
+a.menu:focus				{ text-decoration:underline; }
+
+a.menus:link				{ color: #002900; text-decoration:none;}
+a.menus:visited				{ color: #002900; text-decoration:none;}
+a.menus:hover				{ text-decoration: underline; background-color:#51652C; color:#000;}
+a.menus:active				{ color: Silver;; text-decoration:none;}
+a.menus:focus				{ text-decoration:underline; }
+
+a.menub:link				{ color: #000; text-decoration:none;}
+a.menub:visited				{ color: #000; text-decoration:none;}
+a.menub:hover				{ text-decoration: underline; color:#000; font-weight:bold;}
+a.menub:active				{ color: Silver;; text-decoration:none;}
+a.menub:focus				{ text-decoration:underline; }
+
+/* DEFAULT CLASSES */
+.submit						{ font-size:10px; background-color: #006400; border: 1px solid #757C27; width: 100px; color: gold; height: 20px; vertical-align: absmiddle; padding:0px; margin:0px}
+.silver						{ color: #C0C0C0; }
+.green						{ color: #004601; }
+.gold						{ color:gold; }
+.leditbox 					{ border: 1px solid #000; background-color:#006400; color:Silver; height:16px; background-repeat:no-repeat; width:150px;}
+.lsubmit					{ border: 1px solid #000; font-weight:bold; background-color:#006400; color:Silver; background-repeat:no-repeat }
+
+.searchstring				{ color:red; }

@@ -1,0 +1,22 @@
+Attention:
+  I won't continue this version of Jamp.
+
+	(PHP.)Jamp is a working piece of code. Ok, its not the most finest,
+	but it does its work. (My music database: ~8500 files in 60 GB atm.)
+	I used the PHP version of Jamp for about 2 1/2 years (from the first
+	working version which has never been published (thanks God!))
+
+	Actual, I will fix bugs in this version, new features will not come.
+	Maybe, this fact will lead this version of Jamp coming up to a final
+	`Jamp-1.0.0`.
+	BTW, Jamp was written under PHP4 (4.3.1 mostly) and works well with
+	PHP5 (tested with 5.0.1).
+
+	I love Jamp, and I love PHP.
+	I love all the OO developer, and all the people who makes things going
+	the right way, the true way.
+	Love, live and if you want, smoke!
+/Attention
+
+ Please look for the documentations in the <./documentation> folder.
+                                               -- entropie

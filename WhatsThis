@@ -1,0 +1,18 @@
+Jamp, Just another mp3 player?
+  Ok, its not really a player. Actualy Jamp is a http-streaming script
+  with a lot of features:
+  * XML based skins
+  * HTTP/IP/Login authentication
+  * Any old number of music folders
+  * Access of music files via HTTP over symlinks
+  * Each static file which is accessed will be cached for faster load next time
+  * Temporary and static playlists for each user
+  * Multi language support
+  * Shoutbox for user communication
+  * Bugs are in design
+
+  Requirements:
+  * Linux ;-)
+  * Apache (only testet with it)
+  * MySql
+  * PHP
