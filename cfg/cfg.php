@@ -15,7 +15,7 @@
 if(!defined('LAN')) {
 
 	function getRemoteAddress () {
-		if(ereg("192.168.42.(.*)", $_SERVER['REMOTE_ADDR'], $regs)) {
+		if(ereg("10.0.187.(.*)", $_SERVER['REMOTE_ADDR'], $regs)) {
 			define('LAN', true);
 		} else
 			define('LAN', false);
@@ -24,9 +24,9 @@ if(!defined('LAN')) {
 getRemoteAddress();
 
 # The absolute http-address of the script.
-$cfg['serverroot']              = 'http://jamp.lan.wglpz/';
+$cfg['serverroot']              = 'http://jamp.enti.ty/';
 if(!LAN)
-	$cfg['serverroot'] = 'http://195.158.174.19:23005/';
+	$cfg['serverroot'] = 'http://ackro.ath.cx:23080/';
 
 
 # The folder where all symlinks and playlists are stored.
@@ -47,7 +47,7 @@ if(!LAN)
 
 
 # User of the webserver.
-$cfg['httpdUser']               = 'entropie';
+$cfg['httpdUser']               = 'apache';
 # Group of the webserver.
 $cfg['httpdGroup']              = 'apache';
 
@@ -65,14 +65,14 @@ $cfg['m3ufile']                 = substr(md5(time()),0,16) . '.m3u';
 # Natural sort of files during updatedb.
 $cfg['sort_updatedb']           = 1;
 # Set all folders where your songs are stored.
-$cfg['mp3_dirs'][]              = '/home/ftp/pub/music/';
-$cfg['mp3_dirs'][]              = '/home/r00t/vault.b/audiostuff/mp3';
-$cfg['mp3_dirs'][]              = '/mnt/mp3_ralph/';
+$cfg['mp3_dirs'][]              = '/home/music/';
+#$cfg['mp3_dirs'][]              = '/home/r00t/vault.b/audiostuff/mp3';
+#$cfg['mp3_dirs'][]              = '/mnt/mp3_ralph/';
 # Lifetime of the cookie. 3600*24*30*12 = 1 Jear
 $cfg['cookie_lifetime']         = (3600*24*30*12);
 # Folder where mp3blaster playlists are stored.
 # Used for local playing. httpd user must have write rights.
-$cfg['mp3blaster_plist_dir']    = '/etc/playlists';
+$cfg['mp3blaster_plist_dir']    = '/home/apache/jamp/playlists';
 # Shoutbox. Set to 0 if you dont want.
 $cfg['showShoutBox']            = 1;
 # Shoutbox max entrys are visible.
@@ -106,14 +106,14 @@ $cfg['mysql']['new_db']         = 1;
 # MySql Server
 $cfg['mysql']['server']         = 'localhost';
 # MySql Username
-$cfg['mysql']['username']       = '';
+$cfg['mysql']['username']       = 'root';
 # MySql Password
-$cfg['mysql']['pw']             = '';
+$cfg['mysql']['pw']             = 'keke@rofl.de';
 # MySql Database
 $cfg['mysql']['db']             = 'Jamp';
 
 // If you dont want, leave empty and set the vars above.
-$cfg['mysql']['PrivFile']       = '/home/entropie/source/cfg.privateMySQL.php';
+#$cfg['mysql']['PrivFile']       = '/home/entropie/source/cfg.privateMySQL.php';
 #
 # Attentione: SET 'PrivFile' to '' if you dont want to use it.
 #
@@ -138,12 +138,12 @@ $cfg['logFolder']               = 'logs/';
 # Maximal logfile size:
 $cfg['max_log_size']            = 1024*20; // MB
 # Maximal logfile size of devlog.
-$cfg['maxDevLogSize']           = 1024*1;  // KB
+$cfg['maxDevLogSize']           = 1024*1;
 # Save old logs?
 $cfg['saveOldDevLogs']          = 1;
 # Show devlog for admin.
 // Not active yet!
-$cfg['showDevLog']              = 0;
+$cfg['showDevLog']              = 1;
 # Lines to show.
 $cfg['devLogLines']	            = 23;
 // If you dont want logging leave specific file empty. [extension: log]
@@ -160,9 +160,11 @@ $cfg['version']                 = 'version 0.3.0';
 # Sends mail on error?
 $cfg['mailOnError']             = 1;
 # Mail address of the user.
-$cfg['mailAddr']                = 'entropie@lan.wglpz';
+$cfg['mailAddr']                = 'entropie@particle.enti.ty';
 
 
 # Dont edit below!
 include($cfg['langFolder'] . '/' . $cfg['language'] . '.php');
+
+//mysql> SELECT a.id, b.file, a.path, a.id AS pid, c.path as prim_path, c.prim_path_id as ppid FROM Jamp_path AS a LEFT JOIN Jamp_fullpath AS c ON c.id=a.id LEFT JOIN Jamp_files AS b ON a.id = b.pathid WHERE a.path LIKE '%goa/%' || a.id = '71';;
 ?>
